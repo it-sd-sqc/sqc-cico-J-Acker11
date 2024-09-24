@@ -43,6 +43,8 @@ public class Main {
     {
       if (fb.getDocument() != null) {
         super.insertString(fb, offset, stringToAdd, attr);
+      } else if (fb.getDocument().getLength() > MAX_LENGTH) {
+        super.insertString(fb, offset, stringToAdd, attr);
       }
       else {
         Toolkit.getDefaultToolkit().beep();

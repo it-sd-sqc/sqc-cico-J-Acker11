@@ -61,4 +61,11 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+## Test steps
+1. Build and run CiCo.
+2. Enter 8 Digits into the field 
+
+## Expected results
+* Should stop you from entering 9 digits 
+
 
