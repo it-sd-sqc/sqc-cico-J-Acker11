@@ -291,6 +291,16 @@ public class Main {
 
     panelStatus.add(Box.createVerticalGlue());
 
+    JButton doneButton = new JButton("Done");
+    doneButton.setAlignmentX(JComponent.CENTER_ALIGNMENT); 
+    doneButton.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        doneProcessing();
+      }
+    });
+    doneButton.setForeground(Color.green);
+    panelStatus.add(doneButton);
+
     // Error panel ////////////////////////////////////////////////////////////
     JPanel panelError = new JPanel();
     panelError.setLayout(new BoxLayout(panelError, BoxLayout.PAGE_AXIS));
